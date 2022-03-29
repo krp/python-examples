@@ -123,11 +123,13 @@ print(letters)
 number_string = "1234"
 
 print(number_string)
+```
 
 
-# Type Conversion
+### Type Conversion
 
 
+```python
 type(23)
 
 type(3.14)
@@ -174,5 +176,5 @@ bool(-2)
 bool(0.0)
 bool(0.1)
 bool(-0.0)
-
+```
 
