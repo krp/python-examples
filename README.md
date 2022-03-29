@@ -213,6 +213,10 @@ my_tuple.index("hello")
 my_tuple.index(3.14)
 my_tuple.index(False)
 my_tuple.index("blah")  # ValueError.
+
+
+# Trying to change the value of an item in a tuple causes an error.
+my_tuple[2] = "newvalue"  # TypeError.
 ```
 
 Lists.
