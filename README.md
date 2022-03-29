@@ -105,4 +105,74 @@ print(12 / 2)  # Regular division, converts to float
 
 print(13 / 2)  # Regular division
 
+print(round(2.3))  # Round a number from float to int
+
+print(round(2.7))  # Round another number from float to int
+
+
+# Strings
+
+language = "python"
+
+print(language)
+
+letters = "abcd1234"
+
+print(letters)
+
+number_string = "1234"
+
+print(number_string)
+
+
+# Type Conversion
+
+
+type(23)
+
+type(3.14)
+
+type(True)
+
+type(-12.4)
+
+type("hello")
+
+type("a")
+
+
+# Convert from float to int
+number = int(3.14)
+type(number)
+
+# Convert from int to float
+number = float(3)
+type(number)
+
+# Convert from string to int
+number = int("1234")
+type(number)
+
+# Convert from string to float
+number = float("12.345")
+type(number)
+
+# Convert from bool to string
+value = str(True)
+type(value)
+
+# Convert from string to bool
+value = bool('False')
+
+# Convert from int to bool
+bool(0)
+bool(1)
+bool(5)
+bool(-2)
+
+# Convert from float to bool
+bool(0.0)
+bool(0.1)
+bool(-0.0)
+
 
