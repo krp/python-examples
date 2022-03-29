@@ -13,7 +13,7 @@ Topics to cover:
   - [Type Conversion](#type-conversion)
   - [Collections 1 (`list` and `tuple`)](#collections-1)
   - [Collections 2 (`set` and `dictionary`)](#collections-2)
-  - [TBD](#tdb)
+  - [TBD](#tbd)
 
 
 ### Output
