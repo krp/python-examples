@@ -5,17 +5,18 @@ These are designed to be typed into a Python interpreter. These should be simple
 
 Topics to cover:
 
-* 00 - Output
-* 01 - Variables
-* 02 - Input
-* 03 - Primitive Data Types (`bool`, `int`, `float`, `string`)
-* 04 - Type conversion
-* 05 - Collections 1 (`list` and `tuple`)
-* 06 - Collections 2 (`set` and `dictionary`)
-* 07 - TBD
+- [Topics](#topics)
+  - [Output](#output)
+  - [Variables](#variables)
+  - [Input](#input)
+  - [Primitive Data Types (`bool`, `int`, `float`, `string`)](#primitive-data-types)
+  - [Type Conversion](#type-conversion)
+  - [Collections 1 (`list` and `tuple`)](#collections-1)
+  - [Collections 2 (`set` and `dictionary`)](#collections-2)
+  - [TBD](#tdb)
 
 
-### 00 - Output
+### Output
 
 ```python
 # Lines that begin with a '#' are called comments
@@ -31,7 +32,7 @@ print("hello " + 1234)
 ```
 
 
-### 01 - Variables
+### Variables
 
 ```python
 foo = 1234
@@ -47,7 +48,7 @@ test = name + foo
 print(test)
 ```
 
-### 02 - Input
+### Input
 
 ```python
 number = input("Please enter a number: ")
@@ -58,7 +59,7 @@ print("hello " + name)
 ```
 
 
-### 03 - Primitive Data Types
+### Primitive Data Types
 
 ```python
 # Boolean (True/False) values
