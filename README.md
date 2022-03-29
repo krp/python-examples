@@ -178,3 +178,43 @@ bool(0.1)
 bool(-0.0)
 ```
 
+### Collections 1 (tuple and list)
+
+Tuples.
+
+```python
+# A tuple is a read-only data structure for storing collections that
+# don't need to be changed. You create one using ( and ) characters.
+
+# Create a tuple
+my_tuple = (1, 2, "hello", 3.14, False, "hello")
+
+print(type(my_tuple))
+
+# Access an item by index using [ and ]. Indexes start at 0
+print(my_tuple[0])
+
+print(my_tuple[3])
+
+print(my_tuple[10])  # IndexError.
+
+# Access a container from right-to-left
+print(my_tuple[-1])
+print(my_tuple[-3])
+
+# Count number of items in a tuple
+my_tuple.count("hello")
+my_tuple.count(3.14)
+my_tuple.count("blahblah")
+
+# Search and get the index of an item
+my_tuple.index("hello")
+
+my_tuple.index(3.14)
+my_tuple.index(False)
+my_tuple.index("blah")  # ValueError.
+```
+
+Lists.
+
+Coming soon.
