@@ -11,8 +11,8 @@ Topics to cover:
   - [Input](#input)
   - [Primitive Data Types (`bool`, `int`, `float`, `string`)](#primitive-data-types)
   - [Type Conversion](#type-conversion)
-  - [Collections 1 (`list` and `tuple`)](#collections-1)
-  - [Collections 2 (`set` and `dictionary`)](#collections-2)
+  - [Collections 1 (`list` and `tuple`)](#collections-1-tuple-and-list)
+  - [Collections 2 (`set` and `dictionary`)](#collections-2-set-and-dictionary)
   - [TBD](#tbd)
 
 
