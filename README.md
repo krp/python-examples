@@ -11,9 +11,9 @@ Topics to cover:
   - [Input](#input)
   - [Primitive Data Types (`bool`, `int`, `float`, `string`)](#primitive-data-types)
   - [Type Conversion](#type-conversion)
-  - [Collections 1 (`list` and `tuple`)](#collections-1)
-  - [Collections 2 (`set` and `dictionary`)](#collections-2)
-  - [TBD](#tdb)
+  - [Collections 1 (`list` and `tuple`)](#collections-1-tuple-and-list)
+  - [Collections 2 (`set` and `dictionary`)](#collections-2-set-and-dictionary)
+  - [TBD](#tbd)
 
 
 ### Output
@@ -257,8 +257,7 @@ my_list.insert(2, 'blahblah')  # inserts 'blahblah' at index 2.
 my_list.pop()  # removes last item from the list
 my_list.pop(2)  # gets and removes item at index 2
 
-# "remove" differs from pop. pop uses an index. remove searches for the value
-and removes the first instance of it.
+# "remove" differs from pop. pop uses an index. remove searches for the value and removes the first instance of it.
 my_list.remove("hello")  # searches for "hello" and removes 1st instance if
 found.
 
@@ -287,3 +286,6 @@ my_list.clear()
 
 
 ### Collections 2 (set and dictionary)
+=======
+Coming soon.
+
