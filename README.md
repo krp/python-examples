@@ -283,9 +283,58 @@ my_list.index("hello")  # You can also tell it where to start/stop searching.
 
 # Clear the list.
 my_list.clear()
+```
 
 
 ### Collections 2 (set and dictionary)
 =======
-Coming soon.
+
+Sets.
+
+```python
+# A set is an unordered collection of things without duplicates.
+# Python will automatically remove duplicates from a set.
+# Important methods you can use on sets are: add, difference,
+intersection, union. Run help(set) for others.
+
+# Create two sets
+set_a = {'Apple', 'Banana', 'Carrot', 'Banana'}  # duplicate gets removed
+set_b = {'Carrot', 'Date', 'Elderberry'}
+
+# Add an item
+set_b.add('Hamster')
+
+# Remove an item
+set_b.remove('Date')
+
+# Perform a "union" operation on the sets, aka join them together and return a new set.
+set_a.union(set_b)
+
+# Perform an "intersection" operation, aka return the set of items in both sets.
+set_a.intersection(set_b)
+
+# Perform a "set difference" operation on the two sets. (objects in set A but not set B)
+set_a.difference(set_b)
+
+# Objects only in one or the other, but not both.
+set_a.symmetric_difference(set_b)
+
+# See help(set) for more methods. These are the most common ones though.
+
+# You can also perform these operations on multiple sets at a time using operators.
+set_c = {'Banana', 'Elderberry', 'Plum'}
+
+# & is intersection. Items only in all sets.
+set_a & set_b & set_c
+
+# | is union. Join all sets together.
+set_a | set_b | set_c
+
+# - is difference (not-symmetric). Items in A but not others.
+set_a - set_b - set_c
+
+# ^ is symmetric difference. Items unique to each set but not overlapping.
+set_a ^ set_b ^ set_c
+
+
 
