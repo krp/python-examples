@@ -27,25 +27,20 @@ print("hello")
 
 print(1234)
 
-print("hello " + 1234)
-
 ```
 
 
 ### Variables
 
 ```python
-foo = 1234
+foo = 1234  # Create a variable called foo whose value is 1234
 
 print(foo)
 
-name = "hello"
+name = "hello"  # Create a variable called name
 
 print(name)
 
-test = name + foo
-
-print(test)
 ```
 
 ### Input
@@ -129,7 +124,7 @@ print(number_string)
 
 ### Type Conversion
 
-
+If we want to add values of different types together, we usually need to convert them to the same type (except with int and float).
 ```python
 type(23)
 
@@ -177,6 +172,13 @@ bool(-2)
 bool(0.0)
 bool(0.1)
 bool(-0.0)
+
+# Weird behaviour:
+1234 + True  # gives 1235 because "True" is 1 internally.
+1234 + 5*True  # gives 1239
+1234 - True  # gives 1233
+1234 / False  # gives ZeroDivisionError
+
 ```
 
 ### Collections 1 (tuple and list)
@@ -371,10 +373,102 @@ my_dictionary.items()
 # See help(dict) for other methods.
 ```
 
+# Conditionals / Control Flow Basics
 
-# Looping
+Often you want your program to do different things based on user input.
+You do this with the `if` and `else` keywords.
+
+```python
+magic_word = input('Please enter the magic word: ')
+if magic_word == 'Ni!':
+  print('We are the knights who say Ni!')
+else:
+  print('Bring me a shrubbery!')
+```
+
+
+# Looping Basics
 Now you know how to use collections in Python.
 The next thing to do is learn how to loop and iterate through collections.
+
+A while loop will continue running and looping until its conditional
+(called the *loop invariant*) is false.
+
+```python
+# The easiest possible loop is an "infinite loop".
+# Press Ctrl-C to stop it.
+while True:
+  print('looping')
+```
+
+A loop will automatically end when its loop invariant is no longer true.
+```python
+number = 1
+while number < 100:
+  print(number)
+  number = number + 1
+```
+
+If you want to **break** out of a loop early, you can use the `break`
+keyword.
+```python
+number = 1
+while True:
+  print(number)
+  number = number + 1
+  if number >= 20:
+    break
+```
+
+You can also tell the loop to **continue** using the `continue` keyword.
+
+```python
+# Skip printing all numbers between 10 and 40
+number = 1
+while number <= 50:
+  number = number + 1
+  if 10 < number < 40:
+    print('skipping')
+    continue  # continue from next iteration of the loop
+
+  print(number)
+```
+
+The alternative to `while` loops are `for` loops. They're usually used
+for looping through collections, and there are a few ways to use them.
+
+```python
+my_list = [1, 2, 'hello', 4]
+
+# How does Python know what 'something' is?
+# Try a different name instead of 'something' here.
+# Any name will work. It gets reassigned on each iteration.
+
+for something in my_list:
+  print(something)
+```
+
+Next is the `range` function which returns a range of numbers.
+(called a `range object`)
+The letter `i` is usually used when looping through numbers.
+It's just a convention though.
+
+```python
+for i in range(1, 10):
+  print(i)
+```
+
+These are the basics of looping. We'll cover more later. For now this will
+allow you to create programs that ask for input until some correct value
+is entered.
+
+```python
+# Exercise: Create a program that runs forever until the user enters
+a correct word.
+# Hint: use input(), a while loop, and an if statement.
+```
+
+
 
 ### Coming later.
 
@@ -382,6 +476,17 @@ The next thing to do is learn how to loop and iterate through collections.
 while
 for / in
 range()
+break / continue
+pass
+match
 enumerate()
 List Comprehensions
+
 ```
+
+* Conditionals (if/elif/else)
+* Exceptions
+* Files (and `with` keyword)
+* Modules (and packages / using pip)
+* Python Modules
+* Basic data structures. (stack, queue)
