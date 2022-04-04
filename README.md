@@ -13,10 +13,12 @@ Topics to cover:
   - [Type Conversion](#type-conversion)
   - [Collections 1 (`list` and `tuple`)](#collections-1-tuple-and-list)
   - [Collections 2 (`set` and `dictionary`)](#collections-2-set-and-dictionary)
+  - [Conditionals / Control Flow Basics](#conditionals--control-flow-basics)
+  - [Looping Basics](#looping-basics)
   - [TBD](#tbd)
 
 
-### Output
+## Output
 
 ```python
 # Lines that begin with a '#' are called comments
@@ -30,7 +32,7 @@ print(1234)
 ```
 
 
-### Variables
+## Variables
 
 ```python
 foo = 1234  # Create a variable called foo whose value is 1234
@@ -43,7 +45,7 @@ print(name)
 
 ```
 
-### Input
+## Input
 
 ```python
 number = input("Please enter a number: ")
@@ -54,7 +56,7 @@ print("hello " + name)
 ```
 
 
-### Primitive Data Types
+## Primitive Data Types
 
 ```python
 # Boolean (True/False) values
@@ -122,7 +124,7 @@ print(number_string)
 ```
 
 
-### Type Conversion
+## Type Conversion
 
 If we want to add values of different types together, we usually need to convert them to the same type (except with int and float).
 ```python
@@ -181,7 +183,7 @@ bool(-0.0)
 
 ```
 
-### Collections 1 (tuple and list)
+## Collections 1 (tuple and list)
 
 Tuples.
 
@@ -222,8 +224,7 @@ my_tuple.index("blah")  # ValueError.
 my_tuple[2] = "newvalue"  # TypeError.
 
 
-# Warning: If creating a tuple with only 1 item, you need to use this special
-syntax with a comma.
+# Warning: If creating a tuple with only 1 item, you need to use this special syntax with a comma.
 my_tuple2 = (42, )
 type(my_tuple2)  # is a 'tuple' type
 
@@ -250,8 +251,7 @@ my_list[2]  # displays "this is a list"
 my_list.append(123)  # Appends 123 on to the end of the list.
 
 # Insert an item at a particular index.
-my_list.insert(0, 'hello')  # inserts 'hello' at the beginning (index 0) of
-list.
+my_list.insert(0, 'hello')  # inserts 'hello' at the beginning (index 0) of list.
 my_list.insert(2, 'blahblah')  # inserts 'blahblah' at index 2.
 
 # "pop" an item from a list, which accesses an item and removes it.
@@ -260,8 +260,7 @@ my_list.pop()  # removes last item from the list
 my_list.pop(2)  # gets and removes item at index 2
 
 # "remove" differs from pop. pop uses an index. remove searches for the value and removes the first instance of it.
-my_list.remove("hello")  # searches for "hello" and removes 1st instance if
-found.
+my_list.remove("hello")  # searches for "hello" and removes 1st instance if found.
 
 # Reverse the list (changes the actual list "in place").
 my_list.reverse()
@@ -288,7 +287,7 @@ my_list.clear()
 ```
 
 
-### Collections 2 (set and dictionary)
+## Collections 2 (set and dictionary)
 =======
 
 Sets.
@@ -297,7 +296,7 @@ Sets.
 # A set is an unordered collection of things without duplicates.
 # Python will automatically remove duplicates from a set.
 # Important methods you can use on sets are: add, difference,
-intersection, union. Run help(set) for others.
+# intersection, union. Run help(set) for others.
 
 # Create two sets
 set_a = {'Apple', 'Banana', 'Carrot', 'Banana'}  # duplicate gets removed
@@ -373,7 +372,7 @@ my_dictionary.items()
 # See help(dict) for other methods.
 ```
 
-# Conditionals / Control Flow Basics
+## Conditionals / Control Flow Basics
 
 Often you want your program to do different things based on user input.
 You do this with the `if` and `else` keywords.
@@ -387,7 +386,7 @@ else:
 ```
 
 
-# Looping Basics
+## Looping Basics
 Now you know how to use collections in Python.
 The next thing to do is learn how to loop and iterate through collections.
 
@@ -470,7 +469,7 @@ a correct word.
 
 
 
-### Coming later.
+### TBD
 
 ```python
 while
