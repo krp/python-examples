@@ -185,7 +185,7 @@ bool(-0.0)
 
 ## Collections 1 (tuple and list)
 
-Tuples.
+### Tuples
 
 ```python
 # A tuple is a read-only data structure for storing collections that
@@ -233,7 +233,7 @@ fake_tuple = (42)
 type(fake_tuple)  # is an 'int' type
 ```
 
-Lists.
+### Lists
 
 ```python
 # Unlike arrays in most other languages, Python lists can store data of any type.
@@ -290,7 +290,7 @@ my_list.clear()
 ## Collections 2 (set and dictionary)
 =======
 
-Sets.
+### Sets
 
 ```python
 # A set is an unordered collection of things without duplicates.
